@@ -1,0 +1,15 @@
+import java.util.*;
+class NumberReverse{
+    public static void main(String args[]){
+        int n,rem=0,m;
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter");
+        n=sc.nextInt();
+        while(n!=0){
+            m=n%10;
+            rem=rem*10+m;
+            n=n/10;
+        }
+        System.out.println(rem);
+    }
+}
