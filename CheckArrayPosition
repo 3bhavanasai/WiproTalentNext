@@ -1,0 +1,28 @@
+import java.util.*;
+class ArrayPosition
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.print("Enter size: ");
+		int size=sc.nextInt();
+		int n2=-1;
+		int a[]=new int[size];
+		for(int i=0;i<a.length;i++){
+			a[i]=sc.nextInt();
+		}
+		System.out.println("Enter a number to check the existence of the number in the above array: ");
+		int check=sc.nextInt();
+		for(int i=0;i<a.length;i++){
+			if(check==a[i]){
+				n2=i;
+			}
+		}
+        if(n2==-1){
+			System.out.println("-1");
+        }
+		else{
+			System.out.println(n2);
+		}
+	}
+}
